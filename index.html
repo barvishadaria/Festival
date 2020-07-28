@@ -8,60 +8,386 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Festival</title>
 </head>
 <body>
-<section class="main_screen">
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fas fa-bars"></span>
+<div class="modal" tabindex="-1" role="dialog" id="modal_gladky">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav" id="slide">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#remarketing">о фестивале <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#speakers">спикеры</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#program">программа</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#price" tabindex="-1" aria-disabled="true">цена</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#registration" tabindex="-1" aria-disabled="true">регистрация</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#contacts" tabindex="-1"
-                               aria-disabled="true">контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <div class="row">
-            <div class="col-lg-3 offset-lg-4 display-col-none col-sm-6 ">
-                <img src="img/aint_fin_h264.gif" alt="">
             </div>
-            <div class="col-lg-3 offset-lg-1 col-sm-6">
-                <h1 class="animated bounce">
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/gladky.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_shnaider">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/shnaider.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_kicenko">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/kicenko.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_galyka">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/galyka.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_bortnyk">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/bortnyk.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_pushkin">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_burcev">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_hrycky">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_kasianenko">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_shigaeva">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/shigaeva.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_baydachenko">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/baydachenko.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_burach">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/burach.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_mokrenko">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="fas fa-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_photo">
+                    <img src="img/mokrenko.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="modal_text">
+                    <h4>Александр Воеводин</h4>
+                    Основатель международной сети кофее MY COFFEE, <br>
+                    вледелец тренинг-центра BARISTA PLUS, Харьков
+                    <br> <br>
+                    Тема: "Франчайзинг -
+                    способ масштабирования бизнеса №1
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" id="slide">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#remarketing">о фестивале <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#speakers">спикеры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#program">программа</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#price">цена</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registration">регистрация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="main_title">
+    <div class="container">
+        <div class="row">
+            <div class="gif col-6 offset-3 col-sm-3 offset-sm-1 col-md-4 col-lg-3 offset-lg-4">
+                <img src="img/bottle.gif" alt="">
+            </div>
+            <div class="text col-sm-6 col-lg-4 offset-lg-1 col-xl-3 offset-xl-2">
+                <h1>
                     <time>8/11/18</time>
                     <br> Premier Palace Hotel Kharkiv
                 </h1>
-                <button type="button" class="btn">сделать брэнд видимым</button>
+                <button type="button" class="btn text-uppercase">сделать брэнд видимым</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 d-flex">
+
+            <div class="col-lg-12 d-flex main_title_partners">
                 <div class="partner d-flex flex-column">
                     Организатор
                     <img src="img/klm.png" alt="logo_partner" class="align-self-center">
@@ -78,10 +404,11 @@
         </div>
     </div>
 </section>
+
 <section class="remarketing" id="remarketing">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 col-12">
+            <div class="col-md-9 col-12 text">
                 <h2>REMARKETING <br> Autumn 2018 <br>XII международный <br> рекламно- <br> маркетинговый <br> фестиваль
                 </h2>
 
@@ -94,16 +421,17 @@
                 <br>
                 Сделай свой бренд видимым, приходи на XII Remarket
             </div>
-            <div class="col-lg-3 display-col-none">
-                <img src="img/aint_fin_h264.gif" alt="">
+            <div class="gif d-col-none col-md-3">
+                <img src="img/bottle.gif" alt="">
             </div>
         </div>
     </div>
 </section>
+
 <section class="promo">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-12 col-sm-9">
+            <div class="col-12 col-md-9 col-lg-5 text">
                 <h2>Тебе это нужно, <br> если ты:</h2>
                 Маркетолог , но потребители не замечают твой продукт <br>
                 PR-менеджер , но никто не видит твои пресс-релизы <br>
@@ -115,406 +443,121 @@
                 Бизнесмен, но твой бизнес неприметен <br>
                 SMM-специалист, но твои посты никто не просматривает
             </div>
-            <div class="col-lg-3 display-col-none col-sm-3"><img src="img/aint_fin_h264.gif" alt=""></div>
+            <div class="gif d-col-none col-sm-3 col-lg-3">
+                <img src="img/bottle.gif" alt="">
+            </div>
         </div>
     </div>
 </section>
+
 <section class="speakers" id="speakers">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12"><h3>headliners:</h3></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo" data-toggle="modal" data-target="#modal_gladky"><img src="img/gladky.jpg"
-                                                                                                alt=""
-                                                                                                class="img-responsive">
+            <h3 class="col-lg-12">headliners:</h3>
+            <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-lg-3">
+                <div class="speaker_photo" data-toggle="modal" data-target="#modal_gladky">
+                    <img src="img/gladky.jpg" alt="" class="img-fluid">
                 </div>
                 <span>Юрий Гладкий</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_gladky">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-
-                    </div>
+            <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-lg-3">
+                <div class="speaker_photo">
+                    <img src="img/shnaider.jpg" alt="" class="img-fluid" data-toggle="modal"
+                         data-target="#modal_shnaider">
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/shnaider.jpg" alt="" class="img-responsive" data-toggle="modal"
-                                                data-target="#modal_shnaider"></div>
                 <span>Костя Шнайдер</span>
-            </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_shnaider">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="mark speakers">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12"><h3>strategic marketing:</h3></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/kicenko.jpg" alt="" class="img-responsive" data-toggle="modal"
-                                                data-target="#modal_shnaider"></div>
+            <h3 class="col-lg-12">strategic marketing:</h3>
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo">
+                    <img src="img/kicenko.jpg" alt="" class="img-fluid" data-toggle="modal"
+                         data-target="#modal_shnaider">
+                </div>
                 <span>Александр Киценко</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_kicenko">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-
-                    </div>
+            <div class=" col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo">
+                    <img src="img/galyka.jpg" alt="" class="img-fluid" data-toggle="modal"
+                         data-target="#modal_galyka">
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/galyka.jpg" alt="" class="img-responsive" data-toggle="modal"
-                                                data-target="#modal_galyka"></div>
                 <span>Владимир Галика</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_galyka">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/bortnyk.jpg" alt="" class="img-responsive" data-toggle="modal"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="img/bortnyk.jpg" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_bortnyk"></div>
                 <span>Вадим Бортник</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_bortnyk">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
+
 <section class="speakers">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12"><h3>Advertising, PR & Design:</h3></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="" alt="" class="img-responsive" data-toggle="modal"
+            <h3 class="col-lg-12">Advertising, PR & Design:</h3>
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_pushkin"></div>
                 <span>Виталий Пушкин</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_pushkin">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"> </i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="" alt="" class="img-responsive" data-toggle="modal"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_burcev"></div>
                 <span>Макс Бурцев</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_burcev">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="" alt="" class="img-responsive" data-toggle="modal"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_hrycky"></div>
                 <span>Дмитрий Грицкий</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_hrycky">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="" alt="" class="img-responsive" data-toggle="modal"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_kasianenko"></div>
                 <span>Ростислав Касьяненко</span>
-            </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_kasianenko">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="digital speakers">
     <div class="container">
         <div class="row">
             <div class="col-lg-12"><h3>Advertising, PR & Design:</h3></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/baydachenko.jpg" alt="" class="img-responsive"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="img/baydachenko.jpg" alt="" class="img-fluid"
                                                 data-toggle="modal" data-target="#modal_baydachenko"></div>
                 <span>Байдаченко</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_baydachenko">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/burach.jpg" alt="" class="img-responsive" data-toggle="modal"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="img/burach.jpg" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_burach"></div>
                 <span>Иван Бурач</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_burach">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/mokrenko.jpg" alt="" class="img-responsive" data-toggle="modal"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="img/mokrenko.jpg" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_mokrenko"></div>
                 <span>Татьяна Мокренко</span>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_mokrenko">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="speaker_photo"><img src="img/shigaeva.jpg" alt="" class="img-responsive" data-toggle="modal"
+            <div class="col-12 d-flex flex-column align-items-center col-lg-3 col-sm-6">
+                <div class="speaker_photo"><img src="img/shigaeva.jpg" alt="" class="img-fluid" data-toggle="modal"
                                                 data-target="#modal_shigaeva"></div>
                 <span>Шигаева Дарья</span>
-            </div>
-            <div class="modal" tabindex="-1" role="dialog" id="modal_shigaeva">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal_photo"></div>
-                            <div class="modal_text">
-                                <h4>Александр Воеводин</h4>
-                                Основатель международной сети кофее MY COFFEE, <br>
-                                вледелец тренинг-центра BARISTA PLUS, Харьков
-                                <br> <br>
-                                Тема: "Франчайзинг -
-                                способ масштабирования бизнеса №1
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="program" id="program">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12"><h3 class="text-uppercase">program:</h3></div>
+            <h3 class="col-lg-12 text-uppercase">program:</h3>
         </div>
     </div>
 
@@ -522,7 +565,7 @@
         <div class="card">
             <div class="card-header" id="headingOne">
                 <div class="container">
-                    <h4 class="mb-0">
+                    <h4>
                         <button class="btn btn-link btn-block text-left" type="button"
                                 data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                                 aria-controls="collapseOne">
@@ -665,205 +708,183 @@
     </div>
 </section>
 
-<section class="schedule">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 offset-lg-2 col-md-3 offset-md-2">
-                <h4>Internet- <br> marketing</h4>
-                <div class="moderator">
-                    модератор секции
-                    <span>Кирилл Чистяков</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <h4>Advertising, <br> pr & design</h4>
-                <div class="moderator">
-                    модератор секции
-                    <span>Виталий Пушкин</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3"><h4>STRATEGIC <br> MARKETING</h4>
-                <div class="moderator">
-                    модератор секции
-                    <span>Вадим Бортник</span>
-                </div>
-            </div>
+<section class="schedule container">
+
+    <div class="row">
+
+        <div class="col-12 col-md-3 offset-md-2 moderator">
+            <h4>Internet- <br> marketing</h4>
+            модератор секции
+            <span>Кирилл Чистяков</span>
         </div>
-        <div class="row pseudo">
-            <div class="col-lg-1 col-md-1">
-                <time>14:45</time>
-            </div>
-            <div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
-                <div class="schedule_photo"></div>
-                <div class="name">Роман Катеринчик</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
+
+        <div class="col-12 col-md-3 moderator">
+            <h4>Advertising, <br> pr & design</h4>
+            модератор секции
+            <span>Виталий Пушкин</span>
         </div>
-        <div class="row pseudo">
-            <div class="col-lg-1 col-md-1">
-                <time>14:45</time>
-            </div>
-            <div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
-                <div class="schedule_photo pseudo_line_small"></div>
-                <div class="name">Роман Катеринчик</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
+
+        <div class="col-12 col-md-4 moderator">
+            <h4>STRATEGIC <br> MARKETING</h4>
+            модератор секции
+            <span>Вадим Бортник</span>
         </div>
-        <div class="row pseudo">
-            <div class="col-lg-1 col-md-1">
-                <time>14:45</time>
-            </div>
-            <div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
-                <div class="schedule_photo"></div>
-                <div class="name">Роман Катеринчик</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
+
+
+        <div class="col-6 offset-3 col-md-1 offset-md-0 time">14:45</div>
+        <div class="d-flex flex-column align-items-center col-md-3 offset-md-1 align-items-md-start">
+            <div class="schedule_photo pseudo-small"></div>
+            <div class="name">Роман Катеринчик</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
         </div>
-        <div class="row pseudo">
-            <div class="col-lg-1 col-md-1">
-                <time>14:45</time>
-            </div>
-            <div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
-                <div class="schedule_photo"></div>
-                <div class="name">Роман Катеринчик</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
+        <div class="d-flex flex-column align-items-center col-md-3 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
         </div>
-        <div class="row pseudo">
-            <div class="col-lg-1 col-md-1">
-                <time>17:00</time>
-            </div>
-            <div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
-                <div class="schedule_photo"></div>
-                <div class="name">Роман Катеринчик</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="schedule_photo"></div>
-                <div class="name">Виталий Пушкин</div>
-                <p>
-                    Какойтокрутойчувак
-                    Украина, Киев <br>
-                    Тема: «Замечательная»
-                </p>
-            </div>
+        <div class="d-flex flex-column align-items-center col-md-4 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий <br> Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
         </div>
-        <div class="row">
-            <div class="col-lg-10">
-                <div class="bagage">
-                    <div class="bagage_logo">
-                        <img src="img/logo_baggage.png" alt="">
-                    </div>
-                    <time>18:00</time>
-                    <p><span>Зал No1</span>
-                        Интенсив от школы рекламы и дизайна “Багаж”</p>
-                </div>
+
+        <div class="col-6 offset-3 col-md-1 offset-md-0 time">14:45</div>
+        <div class="d-flex flex-column align-items-center col-md-3 offset-md-1 align-items-md-start">
+            <div class="schedule_photo pseudo-small"></div>
+            <div class="name">Роман Катеринчик</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-3 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-4 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий <br> Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+
+        <div class="col-6 offset-3 col-md-1 offset-md-0 time">14:45</div>
+        <div class="d-flex flex-column align-items-center col-md-3 offset-md-1 align-items-md-start">
+            <div class="schedule_photo pseudo-small"></div>
+            <div class="name">Роман Катеринчик</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-3 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-4 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий <br> Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+
+        <div class="col-6 offset-3 col-md-1 offset-md-0 time">14:45</div>
+        <div class="d-flex flex-column align-items-center col-md-3 offset-md-1 align-items-md-start">
+            <div class="schedule_photo pseudo-small"></div>
+            <div class="name">Роман Катеринчик</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-3 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-4 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий <br> Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+
+        <div class="col-6 offset-3 col-md-1 offset-md-0 time">14:45</div>
+        <div class="d-flex flex-column align-items-center col-md-3 offset-md-1 align-items-md-start">
+            <div class="schedule_photo pseudo-small"></div>
+            <div class="name">Роман Катеринчик</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-3 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+        <div class="d-flex flex-column align-items-center col-md-4 align-items-md-start">
+            <div class="schedule_photo"></div>
+            <div class="name">Виталий <br> Пушкин</div>
+            <p>
+                Какойтокрутойчувак
+                Украина, Киев <br>
+                Тема: «Замечательная»
+            </p>
+        </div>
+
+        <div class="d-flex flex-column align-items-center flex-sm-row align-items-sm-start col-lg-10 bagage">
+            <div class="bagage_logo">
+                <img src="img/logo_baggage.png" alt="">
             </div>
+            18:00
+            <p><span>Зал No1</span> Интенсив от школы рекламы и дизайна “Багаж”</p>
         </div>
     </div>
 </section>
-
 
 <section class="discount">
     <div class="container">
@@ -872,385 +893,352 @@
                 <h3 class="text-uppercase text-white">Если ты хочешь сделать свой бренд <br>
                     видимым и готов напрягаться, <br>
                     можешь получить скидку на билет :</h3>
-                <p text-white>
-                    1. Покажи нам, как ты работаешь над тем, чтобы твой бренд стал видимым, в любой соц. сети под
-                    хештегом #сделайсвойбрендвидимым . <br>
-                    А мы тебе покажем, сколько стоит билет со скидкой 10%
-                    <br><br>
-                    2. Опубликуй свое фото с печатной продукцией Re <br>
-                    Если ты пережил конец света, игрался инструментами, химичил с маркетингом, проходил лабиринты и
-                    орудовал плёткой
-                    на предыдущих Re – докажи. Опубликуй фотографию с дипломом/бейджем/ программой/блокнотом/афишей в FB
-                    или Instagram
-                    с хештегом #сделайсвойбрендвидимым и получи скидку 10% на билет.
-                    <br><br>
-                    3. Приди не один <br>
-                    А с кем-то ещё. Минимум с двумя. На компании от 3ёх человек действует корпоративная скидка – 10% от
-                    суммы.
-                    Скидки суммируются, как, впрочем, и всегда.
-                </p>
+
+                1. Покажи нам, как ты работаешь над тем, чтобы твой бренд стал видимым, в любой соц. сети под
+                хештегом #сделайсвойбрендвидимым . <br>
+                А мы тебе покажем, сколько стоит билет со скидкой 10%
+                <br><br>
+                2. Опубликуй свое фото с печатной продукцией Re <br>
+                Если ты пережил конец света, игрался инструментами, химичил с маркетингом, проходил лабиринты и
+                орудовал плёткой
+                на предыдущих Re – докажи. Опубликуй фотографию с дипломом/бейджем/ программой/блокнотом/афишей в FB
+                или Instagram
+                с хештегом #сделайсвойбрендвидимым и получи скидку 10% на билет.
+                <br><br>
+                3. Приди не один <br>
+                А с кем-то ещё. Минимум с двумя. На компании от 3ёх человек действует корпоративная скидка – 10% от
+                суммы.
+                Скидки суммируются, как, впрочем, и всегда.
             </div>
         </div>
     </div>
 </section>
+
 <section class="price" id="price">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-12"><h3 class="text-uppercase text-white">стоимость :</h3></div>
-            <div class="col-md-3 offset-sm-3 display-col-none">
-                <img src="img/aint_fin_h264.gif" alt="">
+            <h3 class="col-lg-12 col-12 text-uppercase text-white">стоимость :</h3>
+            <div class="col-12 col-lg-3 offset-lg-4 d-flex justify-content-center gif">
+                <img src="img/bottle.gif" alt="">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <ul>
-                    <li>до 16.09.2018-<span>750 грн</span></li>
-                    <li>до 08.10.2018-<span>850 грн</span></li>
-                    <li>до 25.10.2018-<span>950 грн</span></li>
-                    <li>25.10.2018-<span>1200 грн</span></li>
-                </ul>
-            </div>
+
+            <ul class="col-lg-12">
+                <li>до 16.09.2018-<span>750 грн</span></li>
+                <li>до 08.10.2018-<span>850 грн</span></li>
+                <li>до 25.10.2018-<span>950 грн</span></li>
+                <li>25.10.2018-<span>1200 грн</span></li>
+            </ul>
         </div>
     </div>
 </section>
-<section class="registration" id="registration">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 class="text-uppercase">регистрация:</h3>
-            </div>
-            <div class="col-lg-7">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
-                               placeholder="Ф.И.О.">
-                    </div>
-                    <div class="form-group">
-                        <input type="name" class="form-control" id="exampleInputEmail" placeholder="E-mail">
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control" id="exampleInputPhone"
-                               placeholder="Контактный телефон">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputCompany" placeholder="Компания">
-                    </div>
-                    <div class="form-group form-ticket">
-                        <label for="exampleInputTicket" class="count-label">Кол-во билетов</label>
-                        <div class="quantity">
-                            <input type="number" min="1" max="9" step="1" value="1" id="exampleInputTicket">
-                        </div>
-                        <input type="text" class="form-control promocode" placeholder="Промокод">
-                    </div>
 
-                    <button type="submit" class="btn btn-primary">Оформить</button>
-                </form>
+<section class="registration container" id="registration">
+
+    <div class="row">
+        <h3 class="col-lg-12 text-uppercase">регистрация:</h3>
+        <form method="post" class="col-lg-7">
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"
+                       placeholder="Ф.И.О.">
             </div>
-        </div>
+            <div class="form-group">
+                <input type="name" class="form-control" id="exampleInputEmail" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="exampleInputPhone"
+                       placeholder="Контактный телефон">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputCompany" placeholder="Компания">
+            </div>
+            <div class="form-group form-ticket">
+                <label for="exampleInputTicket" class="count-label">Кол-во билетов</label>
+                <div class="quantity">
+                    <input type="number" min="1" max="9" step="1" value="1" id="exampleInputTicket">
+                </div>
+                <input type="text" class="form-control promocode" placeholder="Промокод">
+            </div>
+            <button type="submit" class="btn btn-primary">Оформить</button>
+        </form>
     </div>
 </section>
 
 <section class="contacts" id="contacts">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12"><h3 class="text-uppercase">контакты:</h3></div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="contact">
-                    050-40-07-500 <br>
-                    Алекандр Ивченко – <br>
-                    по вопросам спонсорства <br>
-                    alek.ivchenko@gmail.com
-                </div>
-            </div>
-            <div class="col-lg-3 offset-lg-2">
-                <div class="contact">
-                    050-40-07-500 <br>
-                    Алекандр Ивченко – <br>
-                    по вопросам спонсорства <br>
-                    alek.ivchenko@gmail.co <br>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="contact marg-no">
-                    095-545-15-30 <br>
-                    Элина Гудыма – по вопросам <br>
-                    медиапартнерства и спикерства <br>
-                    elinagudyma@gmail.com <br>
-                </div>
+            <h3 class="text-uppercase col-lg-12">контакты:</h3>
+
+            <div class="col-12 col-sm-6 col-lg-3 contact">
+                050-40-07-500 <br>
+                Алекандр Ивченко – <br>
+                по вопросам спонсорства <br>
+                alek.ivchenko@gmail.com
             </div>
 
-            <div class="col-lg-3 offset-lg-2">
-                <div class="contact">
-                    050-40-07-500 <br>
-                    Алекандр Ивченко – <br>
-                    по вопросам спонсорства <br>
-                    alek.ivchenko@gmail.co <br>
-                </div>
+
+            <div class="col-12 col-sm-6 col-lg-7 offset-lg-2 contact">
+                050-40-07-500 <br>
+                Алекандр Ивченко – <br>
+                по вопросам спонсорства <br>
+                alek.ivchenko@gmail.co <br>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 contact">
+                095-545-15-30 <br>
+                Элина Гудыма – по вопросам <br>
+                медиапартнерства и спикерства <br>
+                elinagudyma@gmail.com <br>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 offset-lg-2 contact">
+                050-40-07-500 <br>
+                Алекандр Ивченко – <br>
+                по вопросам спонсорства <br>
+                alek.ivchenko@gmail.co <br>
             </div>
         </div>
     </div>
 </section>
 
-<!--<section class="partners_logo">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 display-col-none"><h3 class="text-uppercase">партнёры:</h3></div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/bbdo_foot.png" alt="partner_logo_bbdo">-->
-<!--                    Креативный партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/yaposhka_foot.png" alt="partner_logo_yaposhka">-->
-<!--                    Генеральный партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/klm_foot.png" alt="partner_logo_klm">-->
-<!--                    Организатор-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/glad_head.png" alt="partner_logo_glad">-->
-<!--                    Дизайн партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+<section class="partners_logo container">
 
+    <div class="row">
+        <h3 class="d-none col-md-12 text-uppercase">партнёры:</h3>
 
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/marka.png" alt="partner_logo_marka">-->
-<!--                    Диджитал партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/zebra.png" alt="partner_logo_zebra">-->
-<!--                    Генеральный полиграфический партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/cofe.png" alt="partner_logo_cofe">-->
-<!--                    Кофе партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/media_club.png" alt="partner_logo_media_club">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/bbdo_foot.png" alt="partner_logo_bbdo">
+                Креативный партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/yaposhka_foot.png" alt="partner_logo_yaposhka">
+                Генеральный партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/klm_foot.png" alt="partner_logo_klm">
+                Организатор
+            </div>
+            <div class="partner_logo">
+                <img src="img/glad_head.png" alt="partner_logo_glad">
+                Дизайн партнёр
+            </div>
+        </div>
 
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/canape.png" alt="partner_logo_canape">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/premier.png" alt="partner_logo_premier">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/megapolis.png" alt="partner_logo_megapolis">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/fridays.png" alt="partner_logo_fridays">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/marka.png" alt="partner_logo_marka">
+                Диджитал партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/zebra.png" alt="partner_logo_zebra">
+                Генеральный полиграфический <br> партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/cofe.png" alt="partner_logo_cofe">
+                Кофе партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/media_club.png" alt="partner_logo_media_club">
+                Партнёр
+            </div>
+        </div>
 
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/want.png" alt="partner_logo_i_want">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/l_pack.png" alt="partner_logo_l_pack">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/bizlit.png" alt="partner_logo_bizlit">-->
-<!--                    Партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/mmr.png" alt="partner_logo_mmr">-->
-<!--                    Генеральный партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/star.png" alt="partner_logo_new_star">-->
-<!--                    Гениральный медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/sostav.png" alt="partner_logo_sostav">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/dafi.png" alt="partner_logo_dafi">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/057.png" alt="partner_logo_057">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/canape.png" alt="partner_logo_canape">
+                Партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/premier.png" alt="partner_logo_premier">
+                Партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/megapolis.png" alt="partner_logo_megapolis">
+                Партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/fridays.png" alt="partner_logo_fridays">
+                Партнёр
+            </div>
+        </div>
 
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/znaj.png" alt="partner_logo_znaj">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/tranplin.png" alt="partner_logo_tramplin">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/allkharkov.png" alt="partner_logo_allkharkov">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/artjoker.png" alt="partner_logo_artjoker">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/clutch.png" alt="partner_logo_clutch">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/flash_media.png" alt="partner_logo_flash">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/fss.png" alt="partner_logo_fss">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/imho.png" alt="partner_logo_imho">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/khorek.png" alt="partner_logo_khorek">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/logo_isfor.png" alt="partner_logo_isfor">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/uk_mark.png" alt="partner_logo">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/source.png" alt="partner_logo_source">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex d-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/cluster.png" alt="partner_logo_cluster">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/hh.png" alt="partner_logo">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/mark_school.png" alt="partner_logo">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/send.png" alt="partner_logo_">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex display-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/education.png" alt="partner_logo_education">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/yudjes.png" alt="partner_logo_yudjes">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/78.png" alt="partner_logo">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/k_media.png" alt="partner_logo_k_media">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex display-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/nashumi.png" alt="partner_logo">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/seoinar.png" alt="partner_logo_seoinar">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/sundays.png" alt="partner_logo">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/varta_media.png" alt="partner_logo">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 d-flex display-col-none">-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/znaj1.png" alt="partner_logo_znaj">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/dozor.png" alt="partner_logo_dozor">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/koriza.png" alt="partner_logo_koriza">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--                <div class="partner_logo">-->
-<!--                    <img src="img/vgorode.png" alt="partner_logo_vgorode">-->
-<!--                    Медиа партнёр-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/want.png" alt="partner_logo_i_want">
+                Партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/l_pack.png" alt="partner_logo_l_pack">
+                Партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/bizlit.png" alt="partner_logo_bizlit">
+                Партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/mmr.png" alt="partner_logo_mmr">
+                Генеральный партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/star.png" alt="partner_logo_new_star">
+                Гениральный медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/sostav.png" alt="partner_logo_sostav">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/dafi.png" alt="partner_logo_dafi">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/057.png" alt="partner_logo_057">
+                Медиа партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/znaj.png" alt="partner_logo_znaj">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/tranplin.png" alt="partner_logo_tramplin">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/allkharkov.png" alt="partner_logo_allkharkov">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/artjoker.png" alt="partner_logo_artjoker">
+                Медиа партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/clutch.png" alt="partner_logo_clutch">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/flash_media.png" alt="partner_logo_flash">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/fss.png" alt="partner_logo_fss">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/imho.png" alt="partner_logo_imho">
+                Медиа партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/khorek.png" alt="partner_logo_khorek">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/logo_isfor.png" alt="partner_logo_isfor">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/uk_mark.png" alt="partner_logo">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/source.png" alt="partner_logo_source">
+                Медиа партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/cluster.png" alt="partner_logo_cluster">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/hh.png" alt="partner_logo">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/mark_school.png" alt="partner_logo">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/send.png" alt="partner_logo_">
+                Медиа партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/education.png" alt="partner_logo_education">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/yudjes.png" alt="partner_logo_yudjes">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/78.png" alt="partner_logo">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/k_media.png" alt="partner_logo_k_media">
+                Медиа партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/nashumi.png" alt="partner_logo">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/seoinar.png" alt="partner_logo_seoinar">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/sundays.png" alt="partner_logo">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/varta_media.png" alt="partner_logo">
+                Медиа партнёр
+            </div>
+        </div>
+
+        <div class="d-none col-md-12 d-md-flex">
+            <div class="partner_logo">
+                <img src="img/znaj1.png" alt="partner_logo_znaj">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/dozor.png" alt="partner_logo_dozor">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/koriza.png" alt="partner_logo_koriza">
+                Медиа партнёр
+            </div>
+            <div class="partner_logo">
+                <img src="img/vgorode.png" alt="partner_logo_vgorode">
+                Медиа партнёр
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 d-flex">
+            <div class="col-md-12 d-flex flex-column flex-sm-row align-items-left">
                 <div class="partner d-flex flex-column">
                     организаторы фестиваля <br>
                     Kharkov Leading Medi
@@ -1267,31 +1255,20 @@
                     <img src="img/art_lemon.png" alt="logo_partner">
                 </div>
             </div>
-        </div>
-        <div class="row">
+
             <div class="col-lg-12 socials">
-                <a href="#" title="youtobe"></a>
-                <a href="#" title="faceboock"></a>
+                <a href="#" title="youtube"></a>
+                <a href="#" title="facebook"></a>
                 <a href="#" title="instagram"></a>
             </div>
         </div>
     </div>
 </footer>
-
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous">
-
 </script>
-
-<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"-->
-<!--        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"-->
-<!--        crossorigin="anonymous"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"-->
-<!--        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"-->
-<!--        crossorigin="anonymous"></script>-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>

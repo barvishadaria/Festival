@@ -8,19 +8,19 @@
   font-style: normal;
   font-display: swap;
 }
-.schedule .bagage time, .schedule .col-lg-3 h4, .schedule .col-lg-1 time, .program .card .card-body .event time, .main_screen h1 time, .main_screen h1, .partners_logo h3, .contacts h3, .registration h3, .discount h3, .program .card .card-header h4 button time, .program h3, .speakers h3, .promo h2, .remarketing .col-lg-9 h2 {
+.schedule .bagage, .schedule .moderator h4, .schedule .time, .program .card .card-body .event time, .text h1 time, .text h1, .partners_logo h3, .contacts h3, .registration h3, .discount h3, .program .card .card-header h4 button time, .program h3, .speakers h3, .promo h2, .remarketing .text h2 {
   font-family: "Myriad Pro";
   font-weight: 700;
 }
 
-footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price ul li, .discount p, .schedule .bagage p, .schedule p, .schedule .name, .program .card .card-body .event p, .program .card .card-header h4 button, .modal-dialog .modal_text h4, .modal-dialog .modal_text, .speakers span, .promo .col-lg-5, .remarketing .col-lg-9, .main_screen button.btn {
+footer .partner, .contacts .contact, .registration button.btn, .price ul li, .discount, .schedule .bagage p, .schedule p, .schedule .name, .program .card .card-body .event p, .program .card .card-header h4 button, .speakers span, .promo .text, .remarketing .text, .text button.btn, .modal-dialog .modal_text h4, .modal-dialog .modal_text {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
 }
 
-.partners_logo h3, .contacts h3, .registration h3, .discount h3, .program .card .card-header h4 button time, .program h3, .speakers h3, .promo h2, .remarketing .col-lg-9 h2 {
+.partners_logo h3, .contacts h3, .registration h3, .discount h3, .program .card .card-header h4 button time, .program h3, .speakers h3, .promo h2, .remarketing .text h2 {
   color: #fff;
   font-size: 30px;
   text-transform: uppercase;
@@ -33,99 +33,182 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   font-family: "Oswald", sans-serif;
 }
 
-.main_screen {
-  background-color: #000;
-  padding-bottom: 37px;
-  margin-bottom: 3px;
+.img-responsive {
+  width: 100%;
 }
-.main_screen .bg-light {
+
+.modal-dialog {
+  max-width: 1000px !important;
+}
+.modal-dialog .modal-header {
+  border-bottom: none;
+  position: relative;
+  bottom: 65px;
+  left: 90px;
+}
+@media (max-width: 767px) {
+  .modal-dialog .modal-header {
+    bottom: 15px;
+    left: 0;
+  }
+}
+.modal-dialog .modal-header button {
+  outline: none;
+}
+.modal-dialog .modal-header button span {
+  font-size: 15px;
+  color: #524f78;
+}
+.modal-dialog .modal-content {
+  border-radius: 0;
+  border: 1px solid #000;
+  padding: 50px 97px 103px;
+}
+@media (max-width: 767px) {
+  .modal-dialog .modal-content {
+    padding: 15px;
+  }
+}
+.modal-dialog .modal-body {
+  display: flex;
+}
+.modal-dialog .modal_photo {
+  width: 300px;
+  height: 300px;
+  margin-right: 24px;
+}
+@media (max-width: 576px) {
+  .modal-dialog .modal_photo {
+    display: none;
+  }
+}
+.modal-dialog .modal_text {
+  color: #000;
+}
+.modal-dialog .modal_text h4 {
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+header {
+  background-color: #000;
+  padding-bottom: 50px;
+}
+header .bg-dark {
   background-color: #000 !important;
 }
-.main_screen .bg-light .nav-item {
+header .bg-dark .nav-item {
   margin-left: 85px;
 }
-@media only screen and (max-width: 992px) {
-  .main_screen .bg-light .nav-item {
-    margin-left: 15px;
+@media (max-width: 992px) {
+  header .bg-dark .nav-item {
+    margin-left: 0;
+    text-align: center;
   }
 }
-@media only screen and (max-width: 1200px) {
-  .main_screen .bg-light .nav-item {
-    margin-left: 35px;
+@media (max-width: 1200px) {
+  header .bg-dark .nav-item {
+    margin-left: 30px;
   }
 }
-.main_screen .bg-light .nav-item:first-of-type {
-  margin-left: 15px;
+header .bg-dark .nav-item:first-of-type {
+  margin-left: 10px;
 }
-@media only screen and (max-width: 992px) {
-  .main_screen .bg-light .nav-item:first-of-type {
-    margin-left: 15px;
+@media (max-width: 992px) {
+  header .bg-dark .nav-item:first-of-type {
+    margin-left: 0;
   }
 }
-.main_screen .bg-light .nav-item .nav-link {
+@media (max-width: 1200px) {
+  header .bg-dark .nav-item:first-of-type {
+    margin-left: 5px;
+  }
+}
+header .bg-dark .nav-item .nav-link {
   color: #fff !important;
   font-size: 18px;
 }
-.main_screen .bg-light .nav-item .nav-link:focus {
+header .bg-dark .nav-item .nav-link:focus {
   text-decoration: line-through;
 }
-.main_screen .bg-light .nav-item:hover .nav-link {
+header .bg-dark .nav-item:hover .nav-link {
   text-decoration: line-through;
 }
-.main_screen .navbar-toggler {
+header .navbar-toggler {
   border: 2px solid #fff !important;
   background-color: transparent;
   outline: none;
 }
-.main_screen .navbar-toggler span {
+header .navbar-toggler span {
   color: #fff;
 }
-.main_screen .col-lg-3 {
-  position: relative;
-  overflow: hidden;
+
+.main_title {
+  background-color: #000;
+  margin-bottom: 3px;
+  padding-bottom: 60px;
 }
-.main_screen .col-lg-3 img {
-  position: absolute;
-  right: -200px;
-  transform: scale(1.7);
-  padding-top: 75px;
-}
-@media only screen and (max-width: 767px) {
-  .main_screen .col-lg-3 img {
-    transform: none;
+@media (max-width: 767px) {
+  .main_title .gif {
+    display: flex;
+    justify-content: center;
   }
 }
-.main_screen h1 {
+.main_title .gif img {
+  position: relative;
+  right: -55px;
+  transform: scale(1.7);
+  padding-top: 80px;
+}
+@media (max-width: 767px) {
+  .main_title .gif img {
+    transform: none;
+    padding-top: 0;
+    right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .main_title .gif img {
+    transform: scale(1.5);
+    right: 0;
+    padding-top: 80px;
+  }
+}
+
+.text {
+  padding-top: 85px;
+  margin-bottom: 245px;
+}
+@media (max-width: 767px) {
+  .text {
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+}
+.text h1 {
   color: #fff;
   font-size: 35px;
   letter-spacing: 1px;
   margin-bottom: 54px;
-  padding-top: 85px;
 }
-.main_screen h1 time {
+.text h1 time {
   font-size: 69px;
 }
-.main_screen button.btn {
+.text button.btn {
   width: 267px;
   height: 56px;
   border: solid #fff 3px;
-  text-align: center;
   background-color: transparent;
-  text-transform: uppercase;
-  margin-bottom: 245px;
 }
-@media only screen and (max-width: 767px) {
-  .main_screen button.btn {
-    margin-bottom: 45px;
-    width: 257px;
+
+@media (max-width: 576px) {
+  .main_title_partners {
+    flex-direction: column;
   }
 }
-@media only screen and (max-width: 576px) {
-  .main_screen {
-    text-align: center;
-  }
-}
-.main_screen .col-lg-12 .partner {
+.main_title_partners .partner {
   text-align: center;
   margin-right: 100px;
   font-family: "Oswald", sans-serif;
@@ -133,26 +216,20 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   font-size: 16px;
   color: #fff;
 }
-.main_screen .col-lg-12 .partner img {
-  padding-top: 14px;
-  padding-bottom: 20px;
-}
-.main_screen .col-lg-12 .partner:nth-child(2) img {
-  padding-top: 24px;
-}
-.main_screen .col-lg-12 .partner:last-of-type img {
-  padding-top: 8px;
-}
-@media only screen and (max-width: 576px) {
-  .main_screen .col-lg-12 .partner {
+@media (max-width: 576px) {
+  .main_title_partners .partner {
     margin-right: 0;
   }
 }
-@media only screen and (max-width: 576px) {
-  .main_screen .col-lg-12 {
-    flex-direction: column;
-    text-align: center;
-  }
+.main_title_partners .partner img {
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+.main_title_partners .partner:nth-child(2) img {
+  padding-top: 24px;
+}
+.main_title_partners .partner:last-of-type img {
+  padding-top: 8px;
 }
 
 .remarketing {
@@ -160,32 +237,42 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   padding: 80px 0 50px;
   margin-bottom: 3px;
 }
-.remarketing .col-lg-9 {
+@media (max-width: 992px) {
+  .remarketing {
+    padding-bottom: 0;
+  }
+}
+.remarketing .text {
   position: relative;
   z-index: 1;
   margin-bottom: 110px;
 }
-.remarketing .col-lg-9 h2 {
+.remarketing .text h2 {
   line-height: 36px;
   letter-spacing: 0.05em;
   padding-top: 9px;
   margin-bottom: 83px;
 }
-.remarketing .col-lg-3 {
+.remarketing .gif {
   position: relative;
   z-index: 0;
-  right: 34%;
-  overflow: hidden;
+  right: 40%;
 }
-.remarketing .col-lg-3 img {
+@media (max-width: 992px) {
+  .remarketing .gif {
+    right: 35%;
+  }
+}
+.remarketing .gif img {
   position: absolute;
-  left: -280px;
+  left: 67px;
   transform: scale(1.7);
-  padding-top: 75px;
+  padding-top: 80px;
 }
-@media only screen and (max-width: 576px) {
-  .remarketing .col-lg-3 img {
-    transform: none;
+@media (max-width: 992px) {
+  .remarketing .gif img {
+    transform: scale(1.3);
+    left: 15px;
   }
 }
 
@@ -199,44 +286,40 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   padding-top: 4px;
   margin-bottom: 109px;
 }
-.promo .col-lg-5 {
+.promo .text {
   font-weight: 300;
   line-height: 28px;
   margin-bottom: 190px;
 }
-@media only screen and (max-width: 576px) {
-  .promo .col-lg-5 {
-    margin-bottom: 20px;
-  }
-}
-.promo .col-lg-3 {
-  overflow: hidden;
-}
-.promo .col-lg-3 img {
+.promo img {
   position: relative;
-  right: 300px;
+  right: 15px;
   transform: scale(1.7);
-  padding-top: 75px;
+  padding-top: 80px;
 }
-@media only screen and (max-width: 576px) {
-  .promo .col-lg-3 img {
-    transform: none;
-    right: 200px;
-    padding-top: 15px;
+@media (max-width: 767px) {
+  .promo img {
+    display: none;
   }
 }
 
 .speakers {
   padding: 95px 0 150px;
 }
-@media only screen and (max-width: 767px) {
+@media (max-width: 576px) {
   .speakers {
-    padding: 30px 0;
+    padding: 45px 0 50px;
   }
 }
 .speakers h3 {
   color: #000;
   margin-bottom: 87px;
+}
+@media (max-width: 576px) {
+  .speakers h3 {
+    text-align: center;
+    margin-bottom: 37px;
+  }
 }
 .speakers .speaker_photo {
   width: 210px;
@@ -245,12 +328,22 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   margin-bottom: 54px;
   transition: 0.3s;
 }
+@media (max-width: 576px) {
+  .speakers .speaker_photo {
+    margin-bottom: 25px;
+  }
+}
 .speakers .speaker_photo:hover {
   transform: scale(1.2);
 }
 .speakers span {
   display: inline-block;
   color: #000;
+}
+@media (max-width: 576px) {
+  .speakers span {
+    margin-bottom: 35px;
+  }
 }
 .speakers:after {
   content: "";
@@ -259,9 +352,9 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   width: 35%;
   margin-top: 186px;
 }
-@media only screen and (max-width: 767px) {
+@media (max-width: 576px) {
   .speakers:after {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 }
 
@@ -273,61 +366,6 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   display: block;
   content: "";
   border: none;
-}
-
-.modal-dialog {
-  max-width: 1000px !important;
-}
-.modal-dialog .modal-header {
-  border-bottom: none;
-  position: relative;
-  bottom: 65px;
-  left: 90px;
-}
-@media only screen and (max-width: 767px) {
-  .modal-dialog .modal-header {
-    bottom: 20px;
-    left: 10px;
-  }
-}
-.modal-dialog .modal-header button {
-  outline: none;
-}
-.modal-dialog .modal-header i {
-  font-size: 15px;
-  color: #524f78;
-}
-.modal-dialog .modal-content {
-  border-radius: 0;
-  border: 1px solid #000;
-  padding: 50px 97px 103px;
-}
-@media only screen and (max-width: 767px) {
-  .modal-dialog .modal-content {
-    padding: 10px;
-  }
-}
-.modal-dialog .modal-body {
-  display: flex;
-}
-.modal-dialog .modal_photo {
-  width: 300px;
-  height: 300px;
-  background-color: #000;
-  margin-right: 24px;
-}
-@media only screen and (max-width: 767px) {
-  .modal-dialog .modal_photo {
-    display: none;
-  }
-}
-.modal-dialog .modal_text {
-  color: #000;
-}
-.modal-dialog .modal_text h4 {
-  color: #000;
-  text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .program h3 {
@@ -348,7 +386,6 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   display: flex;
   align-items: center;
   text-decoration: none;
-  outline: none;
 }
 .program .card .card-header h4 button time {
   font-size: 48px;
@@ -360,6 +397,11 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
 .program .card .card-body .event {
   display: flex;
   margin-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .program .card .card-body .event {
+    flex-direction: column;
+  }
 }
 .program .card .card-body .event .photo {
   width: 210px;
@@ -382,62 +424,40 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
 }
 
 .schedule {
-  padding: 36px 0 68px;
+  padding-top: 36px;
+  padding-bottom: 68px;
 }
-@media only screen and (max-width: 767px) {
-  .schedule {
-    text-align: center;
-  }
-}
-.schedule .pseudo {
-  position: relative;
-}
-.schedule .pseudo:before {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 60%;
-  background-color: #000;
-  position: absolute;
-  top: 58px;
-  left: 110px;
-}
-@media only screen and (max-width: 767px) {
-  .schedule .pseudo:before {
-    width: 0;
-  }
-}
-.schedule .col-lg-1 {
+.schedule .time {
   padding-left: 30px !important;
-}
-.schedule .col-lg-1 time {
   font-size: 24px;
   color: #000;
   display: block;
   margin-top: 40px;
 }
-@media only screen and (max-width: 766px) {
-  .schedule .col-lg-1 time {
+@media (max-width: 767px) {
+  .schedule .time {
+    font-size: 34px;
     text-align: center;
-    font-size: 35px;
-    margin-top: 20px;
+    padding-left: 15px !important;
   }
 }
-.schedule .col-lg-3 {
-  padding-left: 0 !important;
-}
-.schedule .col-lg-3 h4 {
-  font-size: 24px;
-  color: #000;
-  text-transform: uppercase;
-}
-.schedule .col-lg-3 .moderator {
+.schedule .moderator {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #000;
 }
-.schedule .col-lg-3 .moderator span {
+@media (max-width: 767px) {
+  .schedule .moderator {
+    text-align: center;
+  }
+}
+.schedule .moderator h4 {
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+}
+.schedule .moderator span {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -450,10 +470,48 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   height: 120px;
   background-color: #000;
   margin-bottom: 28px;
+  position: relative;
 }
-@media only screen and (max-width: 767px) {
-  .schedule .schedule_photo {
-    display: inline-block;
+.schedule .schedule_photo:before {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  z-index: -1;
+  top: 55px;
+  right: 145%;
+}
+@media (max-width: 767px) {
+  .schedule .schedule_photo:before {
+    width: 0;
+  }
+}
+.schedule .pseudo-small:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  z-index: -1;
+  top: 55px;
+  right: 80%;
+}
+@media (max-width: 767px) {
+  .schedule .pseudo-small:before {
+    width: 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .schedule .pseudo-small:before {
+    right: 25%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .schedule .pseudo-small:before {
+    right: 50%;
   }
 }
 .schedule .name {
@@ -461,19 +519,45 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   color: #000;
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .schedule .name {
+    text-align: center;
+  }
+}
 .schedule p {
   color: #000;
   font-weight: 300;
 }
+@media (max-width: 767px) {
+  .schedule p {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
 .schedule .bagage {
   display: flex;
   padding-top: 83px;
+  font-size: 40px;
+  color: #000;
+  margin-right: 37px;
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .schedule .bagage {
-    flex-direction: column;
-    align-items: center;
+    margin-right: 0;
   }
+}
+.schedule .bagage p {
+  color: #000;
+  margin-left: 37px;
+}
+@media (max-width: 576px) {
+  .schedule .bagage p {
+    margin-left: 0;
+  }
+}
+.schedule .bagage p span {
+  font-size: 24px;
+  display: block;
 }
 .schedule .bagage .bagage_logo {
   width: 210px;
@@ -484,66 +568,53 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   align-items: center;
   margin-right: 12px;
 }
-.schedule .bagage time {
-  font-size: 40px;
-  color: #000;
-  margin-right: 37px;
-}
-@media only screen and (max-width: 576px) {
-  .schedule .bagage time {
+@media (max-width: 576px) {
+  .schedule .bagage .bagage_logo {
     margin-right: 0;
   }
-}
-.schedule .bagage p {
-  display: inline-block;
-  color: #000;
-}
-.schedule .bagage p span {
-  font-size: 24px;
-  display: block;
 }
 
 .discount {
   background-color: #000;
   padding: 101px 0 126px;
   margin-bottom: 3px;
+  font-weight: 300;
+  color: #fff;
 }
 .discount h3 {
   margin-bottom: 106px;
-}
-.discount p {
-  font-weight: 300;
 }
 
 .price {
   background-color: #000;
   padding-top: 87px;
+  padding-bottom: 50px;
 }
-.price .col-lg-2 h3 {
-  margin-bottom: 630px;
+.price .gif {
+  margin-bottom: 180px;
 }
-@media only screen and (max-width: 767px) {
-  .price .col-lg-2 h3 {
+@media (max-width: 992px) {
+  .price .gif {
     margin-bottom: 50px;
   }
 }
-.price .col-md-3 {
+.price .gif img {
   position: relative;
-  overflow: hidden;
-}
-.price .col-md-3 img {
-  position: absolute;
-  right: -140px;
   transform: scale(1.7);
-  padding-top: 75px;
+  padding-top: 80px;
+}
+@media (max-width: 767px) {
+  .price .gif img {
+    transform: none;
+    padding-top: 0;
+  }
 }
 .price ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 105px;
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 992px) {
   .price ul {
     flex-direction: column;
   }
@@ -559,7 +630,7 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   width: 35%;
   position: relative;
   left: 65%;
-  bottom: 55px;
+  bottom: 0px;
 }
 
 .registration {
@@ -603,11 +674,17 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   padding: 0 50px 6px 18px;
   display: inline-block;
 }
+@media (max-width: 576px) {
+  .registration .count-label {
+    display: block;
+    margin-left: 0;
+  }
+}
 .registration .quantity {
   position: relative;
   display: inline-flex;
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .registration .quantity {
     margin-left: 40px;
   }
@@ -727,18 +804,26 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   background-color: #000;
   padding: 100px 0 150px;
 }
+@media (max-width: 767px) {
+  .contacts {
+    padding: 30px 0;
+    margin-bottom: 3px;
+  }
+}
 .contacts h3 {
   margin-bottom: 65px;
+}
+@media (max-width: 767px) {
+  .contacts h3 {
+    text-align: center;
+  }
 }
 .contacts .contact {
   margin-bottom: 119px;
 }
-.contacts .marg-no {
-  margin-bottom: 0;
-}
-@media only screen and (max-width: 576px) {
-  .contacts .marg-no {
-    margin-bottom: 119px;
+@media (max-width: 767px) {
+  .contacts .contact {
+    text-align: center;
   }
 }
 
@@ -746,12 +831,17 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   padding-top: 91px;
   padding-bottom: 115px;
 }
+@media (max-width: 767px) {
+  .partners_logo {
+    padding: 0;
+  }
+}
 .partners_logo h3 {
   color: #000;
   margin-bottom: 57px;
 }
 .partners_logo .partner_logo {
-  width: 100%;
+  width: 25%;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   color: #000;
@@ -759,11 +849,6 @@ footer .col-md-12 .partner, .contacts .contact, .registration button.btn, .price
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-@media only screen and (max-width: 576px) {
-  .partners_logo .partner_logo {
-    width: 50%;
-  }
 }
 .partners_logo .partner_logo img {
   align-self: flex-start;
@@ -774,40 +859,35 @@ footer {
   background-color: #000;
   padding: 75px 0 68px;
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 767px) {
   footer {
-    padding-top: 0;
+    padding-top: 30px;
   }
 }
-@media only screen and (max-width: 576px) {
-  footer .col-md-12 {
-    flex-direction: column;
-  }
-}
-footer .col-md-12 .partner {
+footer .partner {
   text-align: left;
   margin-right: 100px;
   margin-bottom: 43px;
   display: flex;
   flex-direction: column;
 }
-footer .col-md-12 .partner img {
+footer .partner img {
   padding-top: 27px;
   align-self: flex-start;
 }
-footer .col-md-12 .partner:nth-child(2) img {
+footer .partner:nth-child(2) img {
   padding-top: 39px;
 }
-footer .col-md-12 .partner:last-of-type img {
+footer .partner:last-of-type img {
   padding-top: 34px;
 }
 footer .socials {
   display: flex;
   justify-content: flex-end;
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 767px) {
   footer .socials {
-    flex-direction: row;
+    justify-content: center;
   }
 }
 footer .socials a {
